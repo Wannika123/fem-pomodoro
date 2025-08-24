@@ -1,0 +1,51 @@
+.container {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 32px;
+    margin-bottom: 45px;
+}
+
+.setting-btn {
+    background-color: transparent;
+    border: none;
+    margin-top: auto;
+    margin-bottom: 48px;
+    opacity: 0.5;
+}
+
+.dialog {
+    width: 90%;
+    max-width: 33.75rem;
+    max-height: 90vh;
+    background-color: transparent;
+    border: none;
+    /* overflow: visible; */
+}
+
+@media (min-width: 35rem) {
+    .dialog {
+        border-radius: 25px;
+    }
+    .logo {
+        margin-top: 80px;
+        margin-bottom: 55px;
+    }
+    .setting-btn {
+        margin-bottom: 10vh;
+    }
+}
+
+@media (min-width: 67rem) {
+    .logo {
+        margin-top: 6vh;
+        margin-bottom: 6.875vh;
+    }
+    .setting-btn {
+        margin-bottom: 5vh;
+    }
+}

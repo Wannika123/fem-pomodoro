@@ -1,0 +1,30 @@
+.container {
+    border-radius: 999px;
+    background-color: var(--Extremely-Dark);
+    width: 90%;
+    max-width: 23.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 8px;
+}
+
+.container button {
+    border-radius: 999px;
+    border: none;
+    color: var(--Bluish-White);
+    background-color: transparent;
+    padding: 16px 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.selected {
+    color: var(--Very-Dark) !important;
+    background-color: var(--Selected-Color) !important;
+}
+
+@media (min-width: 35rem) {
+    .container button {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,128 @@
+.container {
+    width: 90%;
+    max-width: 410px;
+    position: relative;
+    margin-top: 48px;
+}
+
+.container > div {
+    padding-top: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+}
+
+.outer-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: linear-gradient(135, #2e325a, #0e112a);
+    box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.svg-wrapper svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    transform: rotate(-90deg);
+}
+
+.svg-wrapper svg circle {
+    --Percent: 0;
+
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: var(--Selected-Color);
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 251.5%;
+    stroke-dashoffset: calc(251.5% - (251.5% * var(--Percent)) / 100);
+}
+
+.inner-circle {
+    width: 89.3%;
+    height: 89.3%;
+    background-color: var(--Extremely-Dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-display {
+    position: relative;
+}
+
+.time-display h1 {
+    font-size: 80px;
+    color: var(--Bluish-White);
+}
+
+.time-display button {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50%;
+    translate: -50% 0;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    color: var(--Bluish-White);
+}
+
+.dialog {
+    border: none;
+    width: 80%;
+    max-width: 28rem;
+    border-radius: 15px;
+    background-color: var(--Pure-White);
+    color: var(--Extremely-Dark);
+    text-align: center;
+    padding: 20px;
+}
+
+.dialog h2 {
+    font-size: 1.5rem;
+}
+
+.dialog button {
+    background-color: var(--Selected-Color);
+    color: var(--Pure-White);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 999px;
+    margin-top: 20px;
+}
+
+@media (min-width: 35rem) {
+    .container {
+        margin-top: 10vh;
+    }
+    .time-display h1 {
+        font-size: 100px;
+    }
+    .time-display button {
+        font-size: 16px;
+        letter-spacing: 15px;
+    }
+}

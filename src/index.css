@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("/fonts/KumbhSans.woff2") format("woff2-variations");
+    font-weight: 100 1000;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("/fonts/RobotoSlab.woff2") format("woff2-variations");
+    font-weight: 100 1000;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url("/fonts/SpaceMono.woff2") format("woff2-variations");
+    font-weight: 100 1000;
+}
+
+:root {
+    --Pure-White: #fff;
+    --Almost-White: #eff1fa;
+    --Bluish-White: #d7e0ff;
+
+    --Extremely-Dark: #161932;
+    --Very-Dark: #1e213f;
+
+    --Red: #f87070;
+    --Blue: #70f3f8;
+    --Purple: #d881f8;
+
+    --Selected-Color: var(--Red);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+body {
+    background-color: var(--Very-Dark);
+    font-family: "Kumbh Sans";
+}
+
+button {
+    font-family: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}

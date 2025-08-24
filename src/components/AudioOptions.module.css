@@ -1,0 +1,32 @@
+.btns {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btns > button {
+    padding: 6px;
+    background-color: var(--Almost-White);
+    color: var(--Very-Dark);
+    border-radius: 3px;
+}
+
+.selected-btn {
+    background-color: var(--Extremely-Dark) !important;
+    color: var(--Pure-White) !important;
+}
+
+.range-input {
+    accent-color: var(--Selected-Color);
+    margin-top: 16px;
+    width: 80%;
+    /* max-width: 25rem; */
+}
+
+@media (min-width: 35rem) {
+    .container > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
