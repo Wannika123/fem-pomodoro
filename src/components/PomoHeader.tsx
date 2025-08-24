@@ -1,4 +1,4 @@
-import type { Mode } from "./Pomodoro";
+import type { Mode } from "../lib/settingOptions";
 import styles from "./PomoHeader.module.css";
 
 type Props = {
