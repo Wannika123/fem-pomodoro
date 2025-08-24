@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Vercel](https://fem-pomodoro-one.vercel.app/)
 
 ## My process
 
@@ -46,6 +46,7 @@ I also add tick sound when the clock is counting down, and alarmsound when the t
 ### Useful resources
 
 -   [Height Enigma](https://www.joshwcomeau.com/css/height-enigma/) - This helps me understand more why sometimes CSS won't work as expected. But it's still frustrating anyway.
+-   [Circular Progress Bar](https://codepen.io/KrzysiekF/pen/bGdRaLr)
 
 ## Author
 
